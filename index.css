@@ -3,7 +3,7 @@
 }
 
 p{
-    font-size: 14vh;
+    font-size: 3.0vh;
 }
 #header-container{
     display: flex;
@@ -32,13 +32,22 @@ p{
 
 #intro h1{
     text-align: center;
+    font-size: 7vh;
    
 
 }
+#intro-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
 #kids-jumping{
-    width: 75vh;
-    height: 45vh;
+    display: flex;
+    width: 70vh;
+    height: 49vh;
+    padding: 45px;
 }
 #about-header{
     text-align: center;
@@ -47,13 +56,35 @@ p{
 #about-lower-container{
     display: flex;
     gap: 3vh;
+    padding-right: 40px;  /* Padding on the right side */
+    padding-bottom: 40px; /* Padding on the bottom side */
+    padding-left: 40px;   /* Padding on the left side */
+    padding-top: 0;  
+    
 
+}
+#about-lower-container-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#about-lower-container-text h2{
+    font-size: 3.0vh;
+    padding-top: 50px;
+    
     
 
 }
 
-
-
+#about-lower-container-text p{
+    display: flex;
+    text-align: center;
+    font-size: 2.5vh;
+    
+    
+}
 
 
 

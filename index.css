@@ -1,0 +1,98 @@
+#headerTitle{
+   
+}
+
+p{
+    font-size: 14vh;
+}
+#header-container{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 15px
+    
+
+}
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    
+}
+#navbar-container a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2vh;
+}
+
+
+#intro h1{
+    text-align: center;
+   
+
+}
+
+#kids-jumping{
+    width: 75vh;
+    height: 45vh;
+}
+#about-header{
+    text-align: center;
+    font-size: 7vh;
+}
+#about-lower-container{
+    display: flex;
+    gap: 3vh;
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ul {
+
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+li:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.date {
+    width: 20%;
+    font-weight: bold;
+    color: #555;
+}
+
+.event-name {
+    width: 60%;
+    text-align: left;
+}
+
+.time {
+    width: 20%;
+    text-align: right;
+    color: #888;
+}

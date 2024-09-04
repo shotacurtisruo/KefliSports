@@ -90,6 +90,8 @@ section {
 }
 #logo{
     display: flex;
+    height: 80vh;
+    width: 60vw;
     padding-top: 20px;
     border: 5px solid white;
     border-radius: 10px;
@@ -228,10 +230,16 @@ li:nth-child(even) {
 }
 
 #collection{
+    padding: 30px;
+    margin-top: -20px;
     background-color: white;
     
 
 
+}
+#collection, h1{
+    font-size: 7vh;
+    text-align: center;
 }
 .gallery-container {
     display: flex;
@@ -241,8 +249,8 @@ li:nth-child(even) {
 }
 #largeImage{
     
-    display: flex;
-    
+    height: 80vh;
+    width: 65vw;
     
 }
 .main-image img {
@@ -251,7 +259,7 @@ li:nth-child(even) {
     width: 70%;
     height: auto;
     margin-bottom: 20px;
-    border: 2px solid #ddd;
+    border: 2px solid black;
     border-radius: 10px;
 }
 .thumbnail-container {
@@ -262,12 +270,13 @@ li:nth-child(even) {
 }
 
 .thumbnail {
+    display: flex;
     width: 15%;
     height: auto;
     cursor: pointer;
-    border: 2px solid #ddd;
+    border: 2px solid black;
     border-radius: 10px;
-    transition: transform 0.2s;
+    transition: transform 0.3s;
 }
 .thumbnail:hover {
     transform: scale(1.1);
@@ -283,8 +292,35 @@ li:nth-child(even) {
 
 
 #support{
+    margin-top: -30px;
+    padding-top: 30px;
     background-color: white;
+    align-items: center;
 }
+#support h1{
+    font-size: 7vh;
+    color: #CD7F32;
+    
+}
+#support p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+#donate{
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: 10px;
+    margin-bottom: 4vh;
+    border-radius: 3px;
+    font-size: 2vh;
+    
+}
+
+
 
 
 

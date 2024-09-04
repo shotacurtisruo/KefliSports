@@ -1,68 +1,130 @@
-#headerTitle{
-   
+
+body{
+    background-color: black;
 }
+#headerTitle{
+    background-color: white;
+   padding: 15px;
+}
+ 
 
 p{
     font-size: 3.0vh;
 }
+section {
+    margin: 0;
+    padding: 0;
+}
 #header-container{
     display: flex;
-    background-color: black;
-    color: white;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+
+    
+   
     
     
 
+
 }
+
+
 #navbar-container {
     display: flex;
-    justify-content: space-between;
+ 
+    justify-content: flex-end;
     align-items: center;
-    background-color: black;
-    
-    color: white;
+    background-color: white;
+  
+    color: black;
     
 }
 #navbar-container a {
-    color: white;
+    
+    color: black;
     text-decoration: none;
     padding: 10px;
     font-size: 2vh;
+    background-color: white;
+}
+#intro{
+    background-color: black;
+    
+
 }
 
+#signup{
+    font-weight: bold;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    border: 10px;
+    margin-bottom: 4vh;
+    border-radius: 3px;
+    font-size: 2vh;
+    
+    
+}
 
 #intro h1{
     text-align: center;
     font-size: 7vh;
+    color: white;
+    
    
 
+}
+#intro p{
+    color: white;
+    margin-top: 0;
 }
 #intro-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    padding-bottom: 30px;
     
 }
 #logo{
     display: flex;
     padding-top: 20px;
+    border: 5px solid white;
+    border-radius: 10px;
 }
+#about{
+    
+    background-color: white;
+}
+
 #kids-jumping{
     display: flex;
-    width: 70vh;
+    width: 50vw;
     height: 49vh;
-    padding: 45px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    padding-right: 45px;
+    background-color: white;
 }
 #about-header{
+    padding-top: 30px;
     text-align: center;
     font-size: 7vh;
+    background-color: white;
+    color: #CD7F32;
+    
 }
 #about-lower-container{
     display: flex;
     gap: 3vh;
     padding-right: 40px;  /* Padding on the right side */
-    padding-bottom: 40px; /* Padding on the bottom side */
+    padding-bottom: 30px; /* Padding on the bottom side */
     padding-left: 40px;   /* Padding on the left side */
     padding-top: 0;  
+    background-color: white;
     
 
 }
@@ -70,12 +132,14 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding-top: 20px;
+    background-color: white;
 }
 
 #about-lower-container-text h2{
     font-size: 3.0vh;
     padding-top: 50px;
+    background-color: white;
     
     
 
@@ -85,10 +149,26 @@ p{
     display: flex;
     text-align: center;
     font-size: 2.5vh;
+    background-color: white;
     
     
 }
-
+#about-header, #events h1 {
+    margin: 0;
+    padding-top: 30px; /* Adjust as needed */
+}
+#events {
+    background-color: white;
+}
+#events h1{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 7.0vh;
+    color: #CD7F32;
+    
+    
+}
 
 
 
@@ -100,6 +180,7 @@ ul {
 
     list-style-type: none;
     padding: 0;
+    background-color: white;
 }
 
 li {
@@ -108,25 +189,108 @@ li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     align-items: center;
+    background-color: white;
+    height: 20vh;
 }
 
 li:nth-child(even) {
     background-color: #f9f9f9;
+
 }
 
 .date {
     width: 20%;
     font-weight: bold;
-    color: #555;
+    color: black;
+    
+    font-size: 20px;
 }
 
 .event-name {
     width: 60%;
     text-align: left;
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+.event-name p{
+    font-size: 20px;
 }
 
 .time {
     width: 20%;
     text-align: right;
-    color: #888;
+    color: black;
+    
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#collection{
+    background-color: white;
+    
+
+
+}
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#largeImage{
+    
+    display: flex;
+    
+    
+}
+.main-image img {
+    
+    
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 13vh;
+}
+
+.thumbnail {
+    width: 15%;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+.thumbnail:hover {
+    transform: scale(1.1);
+    border-color: #888;
+}
+
+
+
+
+
+
+
+
+
+#support{
+    background-color: white;
+}
+
+
+
+
+
+
+#connect{
+    background-color: white;
 }

@@ -1,5 +1,8 @@
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 #headerTitle {
@@ -35,8 +38,8 @@ section {
 
 #navbar-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: white;
     color: black;
 }
@@ -48,8 +51,8 @@ section {
     font-size: 2.4vh;
     background-color: white;
     font-weight: bold;
-    flex: 1 1 50%; /* Each item takes up 50% of the width (two items per row) */
-    box-sizing: border-box; /* Include padding and border in element’s total width */
+    flex: 1 1 50%;
+    text-align: center;
 }
 
 #navbar-container a:hover {
@@ -58,6 +61,12 @@ section {
 
 #intro {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
 }
 
 #signup {
@@ -72,14 +81,15 @@ section {
 }
 
 #intro h1 {
-    text-align: center;
     font-size: 7vh;
     color: white;
+    margin: 0;
 }
 
 #intro p {
     color: white;
     margin-top: 0;
+    font-size: 3vh;
 }
 
 #intro-container {
@@ -87,7 +97,7 @@ section {
     flex-direction: column;
     align-items: center;
     background-color: black;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 30px;
 }
 
@@ -98,22 +108,12 @@ section {
     padding-top: 20px;
     border: 5px solid white;
     border-radius: 10px;
+    justify-content: center;
 }
 
 #about {
     background-color: white;
-    align-items: center;
-}
-
-#kids-jumping {
-    display: flex;
-    width: 50vw;
-    height: 49vh;
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 45px;
-    padding-right: 45px;
-    background-color: white;
+    padding: 40px 0;
 }
 
 #about-header {
@@ -122,16 +122,16 @@ section {
     font-size: 7vh;
     background-color: white;
     color: #CD7F32;
+    margin: 0;
 }
 
 #about-lower-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 3vh;
-    padding-right: 40px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    padding-top: 0;
+    padding: 30px 40px;
     background-color: white;
+    justify-content: center;
 }
 
 #about-lower-container-text {
@@ -140,6 +140,8 @@ section {
     align-items: center;
     padding-top: 20px;
     background-color: white;
+    width: 100%;
+    max-width: 800px;
 }
 
 #about-lower-container-text h2 {
@@ -149,15 +151,9 @@ section {
 }
 
 #about-lower-container-text p {
-    display: flex;
     text-align: center;
     font-size: 2.5vh;
     background-color: white;
-}
-
-#about-header, #events h1 {
-    margin: 0;
-    padding-top: 30px;
 }
 
 #events {
@@ -171,6 +167,7 @@ section {
     justify-content: center;
     font-size: 7.0vh;
     color: #CD7F32;
+    margin: 0;
 }
 
 ul {
@@ -226,7 +223,7 @@ li:nth-child(even) {
     background-color: white;
 }
 
-#collection, h1 {
+#collection h1 {
     font-size: 7vh;
     text-align: center;
 }
@@ -252,20 +249,18 @@ li:nth-child(even) {
 
 .thumbnail-container {
     display: flex;
-    flex-direction: column; /* Stack thumbnails vertically */
+    flex-direction: column;
     align-items: center;
     width: 65%;
-    height: auto;
 }
 
 .thumbnail {
-    display: flex;
-    width: 80%; /* Adjust width as needed */
+    width: 80%;
     height: auto;
     cursor: pointer;
     border: 2px solid black;
     border-radius: 10px;
-    margin-bottom: 10px; /* Space between thumbnails */
+    margin-bottom: 10px;
     transition: transform 0.3s;
 }
 
@@ -284,6 +279,7 @@ li:nth-child(even) {
 #support-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 0px;
     margin-bottom: 40px;
 }
@@ -299,6 +295,8 @@ li:nth-child(even) {
     flex-direction: column;
     padding: 20px;
     justify-content: space-around;
+    width: 50%;
+    text-align: center;
 }
 
 #support-text-container-right h1 {
@@ -309,7 +307,6 @@ li:nth-child(even) {
 #support-text-container-right p {
     font-size: 2.5vh;
     padding: 0px;
-    text-align: center;
 }
 
 #support-text-container-right button {
@@ -335,6 +332,8 @@ li:nth-child(even) {
 #founders-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding: 20px;
 }
 
 #founders-portrait {
@@ -369,16 +368,15 @@ li:nth-child(even) {
     background-color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
 }
 
 #icon-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#lines-divider {
-    background-color: white;
+    gap: 20px;
 }
 
 #social-icon:hover {
@@ -424,7 +422,7 @@ li:nth-child(even) {
 @media (max-width: 992px) {
     #navbar-container {
         display: flex;
-        flex-wrap: wrap; /* Ensure items wrap into rows */
+        flex-wrap: wrap;
         justify-content: center;
         width: 100%;
     }
@@ -433,8 +431,7 @@ li:nth-child(even) {
         padding: 10px;
         font-size: 2vh;
         text-align: center;
-        width: 50%; /* Two items per row */
-        box-sizing: border-box;
+        width: 50%;
     }
 
     #logo {
@@ -470,12 +467,32 @@ li:nth-child(even) {
         height: 60vh;
         width: 50vw;
     }
+
+    #kids-jumping {
+        width: 100vw;
+        height: auto;
+    }
+
+    #kidsflexing {
+        width: 100vw;
+        height: auto;
+    }
+
+    .thumbnail-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .thumbnail {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 768px) {
     #navbar-container {
         display: flex;
-        flex-wrap: wrap; /* Ensure items wrap into multiple rows */
+        flex-wrap: wrap;
         justify-content: center;
         padding: 10px;
     }
@@ -484,12 +501,17 @@ li:nth-child(even) {
         display: block;
         padding: 10px;
         font-size: 2.2vh;
-        width: 50%; /* Adjust as needed */
+        width: 50%;
     }
 
     #logo {
         width: 95vw;
         height: auto;
+    }
+
+    #intro {
+        padding: 20px;
+        text-align: center;
     }
 
     #intro h1 {
@@ -546,12 +568,17 @@ li:nth-child(even) {
     #navbar-container a {
         padding: 8px;
         font-size: 2vh;
-        width: 100%; /* Full width for each item */
+        width: 100%;
     }
 
     #logo {
         width: 100vw;
         height: auto;
+    }
+
+    #intro {
+        padding: 20px;
+        text-align: center;
     }
 
     #intro h1 {

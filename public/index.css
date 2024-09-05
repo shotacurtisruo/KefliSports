@@ -537,11 +537,12 @@ li:nth-child(even) {
         flex-direction: row;
         width: 15%;
         height: auto;
+        align-items: center;
     }
 
     .thumbnail {
         width: 10vw; /* Adjust thumbnails for mobile */
-        height: 10vh;
+        height: 5vh;
     }
 
     #support-container {

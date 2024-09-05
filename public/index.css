@@ -543,6 +543,7 @@ li:nth-child(even) {
         flex-direction: row;
         width: 15%;
         height: auto;
+        justify-content: space-between;
         
     }
 

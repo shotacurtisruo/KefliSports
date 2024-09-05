@@ -540,10 +540,11 @@ li:nth-child(even) {
         
      }
     .thumbnail-container {
+        display: flex;
         flex-direction: row;
-        width: 15%;
-        height: auto;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
         
     }
 

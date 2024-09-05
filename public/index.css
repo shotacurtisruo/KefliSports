@@ -525,7 +525,7 @@ li:nth-child(even) {
     }
     #largeImage {
         width: auto;
-        height: 30vh;
+        height: 20vh;
 
     }
     #collection h1{

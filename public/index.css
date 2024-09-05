@@ -1,8 +1,10 @@
-/* General Styles */
 body {
     background-color: black;
-    margin: 0;
-    font-family: Arial, sans-serif;
+}
+
+#headerTitle {
+    background-color: white;
+    padding: 15px;
 }
 
 h1 {
@@ -18,48 +20,60 @@ section {
     padding: 0;
 }
 
-/* Header Styles */
-#headerTitle {
-    background-color: white;
-    padding: 15px;
-}
-
 #header-container {
     display: flex;
-    flex-direction: column; /* Changed to column for better mobile layout */
-    align-items: center;
+    justify-content: space-between;
     background-color: white;
+    color: black;
+}
+
+#line-divider {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 #navbar-container {
     display: flex;
-    flex-direction: column; /* Changed to column for mobile view */
-    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+    justify-content: center; /* Center items horizontally */
     background-color: white;
-    padding: 10px 0; /* Added padding for mobile spacing */
+    color: black;
 }
 
 #navbar-container a {
     color: black;
     text-decoration: none;
-    padding: 10px;
-    font-size: 4vh; /* Adjusted font size for mobile */
+    padding: 15px;
+    font-size: 2.4vh;
     background-color: white;
     font-weight: bold;
+    flex: 1 1 50%; /* Each item takes up 50% of the width (two items per row) */
+    box-sizing: border-box; /* Include padding and border in element’s total width */
 }
 
 #navbar-container a:hover {
     color: #CD7F32;
 }
 
-/* Intro Section */
 #intro {
     background-color: black;
-    text-align: center; /* Center text for mobile */
+}
+
+#signup {
+    font-weight: bold;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    border: 10px;
+    margin-bottom: 4vh;
+    border-radius: 3px;
+    font-size: 2vh;
 }
 
 #intro h1 {
-    font-size: 5vh; /* Adjusted font size for mobile */
+    text-align: center;
+    font-size: 7vh;
     color: white;
 }
 
@@ -73,90 +87,148 @@ section {
     flex-direction: column;
     align-items: center;
     background-color: black;
-    padding-bottom: 20px; /* Reduced padding for mobile */
+    justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 #logo {
-    height: 40vh; /* Adjusted height for mobile */
-    width: 80vw; /* Adjusted width for mobile */
-    padding-top: 10px;
+    display: flex;
+    height: 80vh;
+    width: 60vw;
+    padding-top: 20px;
     border: 5px solid white;
     border-radius: 10px;
 }
 
-/* About Section */
 #about {
     background-color: white;
-    text-align: center; /* Center text for mobile */
+    align-items: center;
 }
 
 #kids-jumping {
-    width: 90vw; /* Adjusted width for mobile */
-    height: auto; /* Allow height to adjust automatically */
-    padding: 10px;
+    display: flex;
+    width: 50vw;
+    height: 49vh;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    padding-right: 45px;
+    background-color: white;
 }
 
 #about-header {
-    font-size: 5vh; /* Adjusted font size for mobile */
+    padding-top: 30px;
+    text-align: center;
+    font-size: 7vh;
+    background-color: white;
     color: #CD7F32;
 }
 
 #about-lower-container {
     display: flex;
-    flex-direction: column; /* Changed to column for mobile */
-    align-items: center;
-    padding: 20px;
+    gap: 3vh;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-top: 0;
+    background-color: white;
 }
 
 #about-lower-container-text {
-    text-align: center; /* Center text for mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: white;
 }
 
 #about-lower-container-text h2 {
     font-size: 3.0vh;
+    padding-top: 50px;
+    background-color: white;
 }
 
 #about-lower-container-text p {
+    display: flex;
+    text-align: center;
     font-size: 2.5vh;
+    background-color: white;
 }
 
-/* Events Section */
+#about-header, #events h1 {
+    margin: 0;
+    padding-top: 30px;
+}
+
 #events {
     padding-top: 20px;
     background-color: white;
 }
 
 #events h1 {
-    font-size: 5vh; /* Adjusted font size for mobile */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 7.0vh;
     color: #CD7F32;
 }
 
 ul {
     list-style-type: none;
-    padding: 10px;
+    padding: 20px;
+    background-color: white;
 }
 
 li {
     display: flex;
-    flex-direction: column; /* Changed to column for mobile */
+    justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    align-items: center;
     background-color: white;
+    height: 20vh;
 }
 
-.date, .event-name, .time {
-    width: 100%; /* Full width for mobile */
-    font-size: 2.5vh; /* Adjusted font size for mobile */
+li:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.date {
+    width: 20%;
+    font-weight: bold;
+    color: black;
+    font-size: 3vh;
+}
+
+.event-name {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
 }
 
 .event-name p {
-    font-size: 2.0vh; /* Adjusted font size for mobile */
+    font-size: 3vh;
 }
 
-/* Collection Section */
+.time {
+    width: 20%;
+    text-align: right;
+    color: black;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
 #collection {
-    padding: 20px;
+    padding: 30px;
+    margin-top: -20px;
     background-color: white;
+}
+
+#collection, h1 {
+    font-size: 7vh;
+    text-align: center;
 }
 
 .gallery-container {
@@ -166,120 +238,364 @@ li {
 }
 
 #largeImage {
-    height: 50vh; /* Adjusted height for mobile */
-    width: 80vw; /* Adjusted width for mobile */
+    height: 80vh;
+    width: 65vw;
+}
+
+.main-image img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .thumbnail-container {
     display: flex;
-    flex-wrap: wrap; /* Allow thumbnails to wrap */
-    justify-content: center;
-    gap: 10px; /* Adjusted spacing */
-}
-
-.thumbnail {
-    width: 20vw; /* Adjusted width for mobile */
+    flex-direction: column; /* Stack thumbnails vertically */
+    align-items: center;
+    width: 65%;
     height: auto;
 }
 
-/* Support Section */
+.thumbnail {
+    display: flex;
+    width: 80%; /* Adjust width as needed */
+    height: auto;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between thumbnails */
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    border-color: #888;
+}
+
 #support {
-    padding: 20px;
+    margin-top: -30px;
+    padding-top: 30px;
     background-color: white;
+    padding-bottom: 30px;
 }
 
 #support-container {
     display: flex;
-    flex-direction: column; /* Changed to column for mobile */
-    align-items: center;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 #kidsflexing {
-    width: 80vw; /* Adjusted width for mobile */
-    height: auto;
+    width: 45vw;
+    height: 49vh;
+    padding: 45px;
 }
 
 #support-text-container-right {
-    text-align: center; /* Center text for mobile */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
 }
 
 #support-text-container-right h1 {
-    font-size: 5vh; /* Adjusted font size for mobile */
+    font-size: 7vh;
+    margin-bottom: -10px;
 }
 
 #support-text-container-right p {
     font-size: 2.5vh;
+    padding: 0px;
+    text-align: center;
 }
 
 #support-text-container-right button {
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: 10px;
+    margin-bottom: 4vh;
+    border-radius: 3px;
     font-size: 2vh;
 }
 
-/* Founders Section */
+#donate-btn:hover {
+    color: #CD7F32;
+    transform: scale(1.02);
+}
+
 #founders {
-    background-color: white;
-    color: black;
+    color: white;
 }
 
 #founders-container {
     display: flex;
-    flex-direction: column; /* Changed to column for mobile */
-    align-items: center;
+    flex-direction: row;
 }
 
 #founders-portrait {
-    width: 80vw; /* Adjusted width for mobile */
-    height: auto;
+    height: 85vh;
+    width: 37vw;
+    padding: 20px;
 }
 
 #founders-left-side {
-    text-align: center; /* Center text for mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 50%;
+}
+
+#founders-right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
 }
 
 #founders-doc {
-    color: black;
-    padding-top: 10px;
+    color: white;
+    padding-top: 20px;
 }
 
-/* Connect Section */
 #connect {
     background-color: white;
-    text-align: center; /* Center text for mobile */
+    display: flex;
+    flex-direction: column;
 }
 
 #icon-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 10px; /* Adjusted spacing */
-}
-
-#social-icon {
-    width: 10vw; /* Adjusted width for mobile */
 }
 
 #lines-divider {
     background-color: white;
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
-    #header-container {
-        flex-direction: row;
+#social-icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    #logo {
+        width: 80vw;
+        height: auto;
     }
 
+    #intro h1 {
+        font-size: 6vh;
+    }
+
+    #signup {
+        font-size: 1.8vh;
+    }
+
+    #about-header {
+        font-size: 6vh;
+    }
+
+    #events h1 {
+        font-size: 6vh;
+    }
+
+    #collection h1 {
+        font-size: 6vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 6vh;
+    }
+
+    #founders-portrait {
+        height: 70vh;
+        width: 45vw;
+    }
+}
+
+@media (max-width: 992px) {
     #navbar-container {
-        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap; /* Ensure items wrap into rows */
+        justify-content: center;
+        width: 100%;
     }
 
-    #about-lower-container {
-        flex-direction: row;
+    #navbar-container a {
+        padding: 10px;
+        font-size: 2vh;
+        text-align: center;
+        width: 50%; /* Two items per row */
+        box-sizing: border-box;
     }
 
-    #support-container {
-        flex-direction: row;
+    #logo {
+        width: 90vw;
+        height: auto;
     }
 
-    #founders-container {
-        flex-direction: row;
+    #intro h1 {
+        font-size: 5vh;
+    }
+
+    #signup {
+        font-size: 1.6vh;
+    }
+
+    #about-header {
+        font-size: 5vh;
+    }
+
+    #events h1 {
+        font-size: 5vh;
+    }
+
+    #collection h1 {
+        font-size: 5vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 5vh;
+    }
+
+    #founders-portrait {
+        height: 60vh;
+        width: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar-container {
+        display: flex;
+        flex-wrap: wrap; /* Ensure items wrap into multiple rows */
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #navbar-container a {
+        display: block;
+        padding: 10px;
+        font-size: 2.2vh;
+        width: 50%; /* Adjust as needed */
+    }
+
+    #logo {
+        width: 95vw;
+        height: auto;
+    }
+
+    #intro h1 {
+        font-size: 4.5vh;
+    }
+
+    #signup {
+        font-size: 1.4vh;
+    }
+
+    #about-header {
+        font-size: 4.5vh;
+    }
+
+    #events h1 {
+        font-size: 4.5vh;
+    }
+
+    #collection h1 {
+        font-size: 4.5vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 4.5vh;
+    }
+
+    #founders-portrait {
+        height: 50vh;
+        width: 60vw;
+    }
+
+    #kids-jumping {
+        width: 100vw;
+        height: auto;
+    }
+
+    #kidsflexing {
+        width: 100vw;
+        height: auto;
+    }
+
+    .thumbnail-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .thumbnail {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar-container a {
+        padding: 8px;
+        font-size: 2vh;
+        width: 100%; /* Full width for each item */
+    }
+
+    #logo {
+        width: 100vw;
+        height: auto;
+    }
+
+    #intro h1 {
+        font-size: 4vh;
+    }
+
+    #signup {
+        font-size: 1.2vh;
+    }
+
+    #about-header {
+        font-size: 4vh;
+    }
+
+    #events h1 {
+        font-size: 4vh;
+    }
+
+    #collection h1 {
+        font-size: 4vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 4vh;
+    }
+
+    #founders-portrait {
+        height: 40vh;
+        width: 80vw;
+    }
+
+    #kids-jumping {
+        width: 100vw;
+        height: auto;
+    }
+
+    #kidsflexing {
+        width: 100vw;
+        height: auto;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
     }
 }

@@ -440,7 +440,7 @@ li:nth-child(even) {
 #social-icon:hover{
     transform: scale(1.1);
     
-
+}
 @media (max-width: 992px) {
     #navbar-container {
         flex-direction: column;
@@ -451,7 +451,7 @@ li:nth-child(even) {
         padding: 10px;
         font-size: 2vh;
     }
-
+}
 
 @media (max-width: 1024px) {
     #intro-container {
@@ -470,14 +470,12 @@ li:nth-child(even) {
         font-size: 5vh;
     }
 
-
     #events h1 {
         font-size: 5vh;
     }
-    .date,
-   
-    .time {
-        font-size: 2.2vh; /* Slightly smaller font size for medium screens */
+
+    .date, .time {
+        font-size: 2.2vh;
     }
 
     #collection h1 {
@@ -512,9 +510,7 @@ li:nth-child(even) {
         width: 100%;
         margin-bottom: 10px;
     }
-
 }
-
 
 @media (max-width: 1200px) {
     #logo {
@@ -555,12 +551,16 @@ li:nth-child(even) {
 @media (max-width: 992px) {
     #navbar-container {
         flex-direction: column;
+        flex-wrap: wrap; /* Allows the items to wrap onto multiple lines */
         align-items: flex-start;
+        width: 100%;
     }
 
     #navbar-container a {
         padding: 10px;
         font-size: 2vh;
+        flex: 1 1 45%; /* Adjust the width as needed */
+        text-align: center; /* Center align text for better appearance */
     }
 
     #logo {
@@ -579,5 +579,4 @@ li:nth-child(even) {
     #about-header {
         font-size: 5vh;
     }
-
 }

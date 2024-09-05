@@ -543,7 +543,13 @@ li:nth-child(even) {
     #support-text-container-right {
         text-align: center;
     }
-
+    #support-text-container-right h1{
+        font-size: 6vh;
+    }
+    #kidsflexing {
+        height: auto;
+        width: 100%;
+    }
     #donate-btn {
         font-size: 4vw; /* Responsive font size for button */
     }

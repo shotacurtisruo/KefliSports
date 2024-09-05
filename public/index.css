@@ -215,18 +215,18 @@ li:nth-child(even) {
     width: 20%;
     font-weight: bold;
     color: black;
-    font-size: 2.3vh; /* Reduced font size to avoid overlap */
+    font-size: 2.5vh; /* Reduced font size to avoid overlap */
     text-align: left;
 }
 
 .event-name {
     width: 60%;
     text-align: left;
-    font-size: 2.3vh; /* Adjusted font size */
+    font-size: 2.5vh; /* Adjusted font size */
 }
 
 .event-name p {
-    font-size: 2.3vh; /* Adjusted font size */
+    font-size: 2.5vh; /* Adjusted font size */
 }
 
 .time {

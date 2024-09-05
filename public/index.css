@@ -488,16 +488,16 @@ li:nth-child(even) {
     #events h1 {
         font-size: 6vw; /* Responsive font size */
     }
-    #date {
-        font-size: 10px;
+    .date {
+        font-size: 1.5vh;
     }
-    #event-name{
-        font-size: 15px;
+    .event-name{
+        font-size: 2vh;
 
     }
 
-    #time{
-        font-size: 10px;
+    .time{
+        font-size: 1.5vh;
     }
     #about-lower-container {
         flex-direction: column;

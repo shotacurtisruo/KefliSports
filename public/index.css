@@ -523,6 +523,11 @@ li:nth-child(even) {
         height: auto;
         padding: 10px;
     }
+    #largeImage {
+        width: auto;
+        height: 30vh;
+
+    }
     #collection h1{
         font-size: 6vw;
 

@@ -457,12 +457,13 @@ li:nth-child(even) {
 @media (max-width: 992px) {
     #navbar-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     #navbar-container a {
         padding: 10px;
         font-size: 2vh;
+        text-align: center;
     }
 
     #logo {
@@ -480,5 +481,146 @@ li:nth-child(even) {
 
     #about-header {
         font-size: 5vh;
+    }
+    #events h1 {
+        font-size: 5vh;
+    }
+
+    #collection h1 {
+        font-size: 5vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 5vh;
+    }
+
+    #founders-portrait {
+        height: 60vh;
+        width: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar-container {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #navbar-container a {
+        display: block;
+        padding: 10px;
+        font-size: 2.2vh;
+    }
+
+    #logo {
+        width: 95vw;
+        height: auto;
+    }
+
+    #intro h1 {
+        font-size: 4.5vh;
+    }
+
+    #signup {
+        font-size: 1.4vh;
+    }
+
+    #about-header {
+        font-size: 4.5vh;
+    }
+
+    #events h1 {
+        font-size: 4.5vh;
+    }
+
+    #collection h1 {
+        font-size: 4.5vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 4.5vh;
+    }
+
+    #founders-portrait {
+        height: 50vh;
+        width: 60vw;
+    }
+
+    #kids-jumping {
+        width: 100vw;
+        height: auto;
+    }
+
+    #kidsflexing {
+        width: 100vw;
+        height: auto;
+    }
+
+    .thumbnail-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .thumbnail {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar-container a {
+        padding: 8px;
+        font-size: 2vh;
+    }
+
+    #logo {
+        width: 100vw;
+        height: auto;
+    }
+
+    #intro h1 {
+        font-size: 4vh;
+    }
+
+    #signup {
+        font-size: 1.2vh;
+    }
+
+    #about-header {
+        font-size: 4vh;
+    }
+
+    #events h1 {
+        font-size: 4vh;
+    }
+
+    #collection h1 {
+        font-size: 4vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 4vh;
+    }
+
+    #founders-portrait {
+        height: 40vh;
+        width: 80vw;
+    }
+
+    #kids-jumping {
+        width: 100vw;
+        height: auto;
+    }
+
+    #kidsflexing {
+        width: 100vw;
+        height: auto;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
     }
 }

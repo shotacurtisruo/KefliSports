@@ -458,12 +458,15 @@ li:nth-child(even) {
     #navbar-container {
         flex-direction: column;
         align-items: stretch;
+        width: 100%;
     }
 
     #navbar-container a {
         padding: 10px;
         font-size: 2vh;
         text-align: center;
+        width: 100%; /* Ensure full width for each link */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
 
     #logo {

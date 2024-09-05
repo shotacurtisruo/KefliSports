@@ -547,8 +547,8 @@ li:nth-child(even) {
         font-size: 6vh;
     }
     #kidsflexing {
-        height: auto;
-        width: 100%;
+        height: 20vh;
+        width: auto;
     }
     #donate-btn {
         font-size: 4vw; /* Responsive font size for button */

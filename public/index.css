@@ -1,629 +1,285 @@
-
-body{
+/* General Styles */
+body {
     background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-#headerTitle{
-    background-color: white;
-   padding: 15px;
-}
- 
-h1{
+
+h1 {
     color: #CD7F32;
 }
-p{
+
+p {
     font-size: 3.0vh;
 }
+
 section {
     margin: 0;
     padding: 0;
 }
-#header-container{
-    display: flex;
-    justify-content: space-between;
+
+/* Header Styles */
+#headerTitle {
     background-color: white;
-    color: black;
-
-    
-   
-    
-    
-
-
+    padding: 15px;
 }
-#line-divider{
+
+#header-container {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column; /* Changed to column for better mobile layout */
+    align-items: center;
+    background-color: white;
 }
-
 
 #navbar-container {
     display: flex;
- 
-    justify-content: flex-end;
+    flex-direction: column; /* Changed to column for mobile view */
     align-items: center;
     background-color: white;
-  
-    color: black;
-    
+    padding: 10px 0; /* Added padding for mobile spacing */
 }
+
 #navbar-container a {
-    
     color: black;
     text-decoration: none;
-    padding: 15px;
-    font-size: 2.4vh;
+    padding: 10px;
+    font-size: 4vh; /* Adjusted font size for mobile */
     background-color: white;
     font-weight: bold;
 }
-#navbar-container a:hover{
+
+#navbar-container a:hover {
     color: #CD7F32;
 }
-#intro{
+
+/* Intro Section */
+#intro {
     background-color: black;
-    
-
+    text-align: center; /* Center text for mobile */
 }
 
-#signup{
-    font-weight: bold;
-    padding: 15px;
-    color: black;
-    background-color: white;
-    border: 10px;
-    margin-bottom: 4vh;
-    border-radius: 3px;
-    font-size: 2vh;
-    
-    
-}
-
-#intro h1{
-    text-align: center;
-    font-size: 7vh;
+#intro h1 {
+    font-size: 5vh; /* Adjusted font size for mobile */
     color: white;
-    
-   
-
 }
-#intro p{
+
+#intro p {
     color: white;
     margin-top: 0;
 }
-#intro-container{
+
+#intro-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
-    justify-content: space-between;
-    padding-bottom: 30px;
-    
+    padding-bottom: 20px; /* Reduced padding for mobile */
 }
-#logo{
-    display: flex;
-    height: 80vh;
-    width: 60vw;
-    padding-top: 20px;
+
+#logo {
+    height: 40vh; /* Adjusted height for mobile */
+    width: 80vw; /* Adjusted width for mobile */
+    padding-top: 10px;
     border: 5px solid white;
     border-radius: 10px;
 }
-#about{
-    
+
+/* About Section */
+#about {
     background-color: white;
-    align-items: center;
+    text-align: center; /* Center text for mobile */
 }
 
-#kids-jumping{
-    display: flex;
-    width: 50vw;
-    height: 49vh;
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 45px;
-    padding-right: 45px;
-    background-color: white;
+#kids-jumping {
+    width: 90vw; /* Adjusted width for mobile */
+    height: auto; /* Allow height to adjust automatically */
+    padding: 10px;
 }
-#about-header{
-    padding-top: 30px;
-    text-align: center;
-    font-size: 7vh;
-    background-color: white;
+
+#about-header {
+    font-size: 5vh; /* Adjusted font size for mobile */
     color: #CD7F32;
-    
 }
-#about-lower-container{
-    display: flex;
-    gap: 3vh;
-    padding-right: 40px;  /* Padding on the right side */
-    padding-bottom: 30px; /* Padding on the bottom side */
-    padding-left: 40px;   /* Padding on the left side */
-    padding-top: 0;  
-    background-color: white;
-    
 
-}
-#about-lower-container-text{
+#about-lower-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Changed to column for mobile */
     align-items: center;
-    padding-top: 20px;
-    background-color: white;
+    padding: 20px;
 }
 
-#about-lower-container-text h2{
+#about-lower-container-text {
+    text-align: center; /* Center text for mobile */
+}
+
+#about-lower-container-text h2 {
     font-size: 3.0vh;
-    padding-top: 50px;
-    background-color: white;
-    
-    
-
 }
 
-#about-lower-container-text p{
-    display: flex;
-    text-align: center;
+#about-lower-container-text p {
     font-size: 2.5vh;
-    background-color: white;
-    
-    
 }
-#about-header, #events h1 {
-    margin: 0;
-    padding-top: 30px; /* Adjust as needed */
-}
+
+/* Events Section */
 #events {
     padding-top: 20px;
     background-color: white;
 }
-#events h1{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    font-size: 7.0vh;
+
+#events h1 {
+    font-size: 5vh; /* Adjusted font size for mobile */
     color: #CD7F32;
-    
-    
 }
 
-
-
-
-
-
-
 ul {
-
     list-style-type: none;
-    padding: 20px;
-    background-color: white;
+    padding: 10px;
 }
 
 li {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Changed to column for mobile */
     padding: 10px;
     border-bottom: 1px solid #ddd;
-    align-items: center;
     background-color: white;
-    height: 20vh;
 }
 
-li:nth-child(even) {
-    background-color: #f9f9f9;
-
+.date, .event-name, .time {
+    width: 100%; /* Full width for mobile */
+    font-size: 2.5vh; /* Adjusted font size for mobile */
 }
 
-.date {
-    width: 20%;
-    font-weight: bold;
-    color: black;
-    
-    font-size: 3vh;
+.event-name p {
+    font-size: 2.0vh; /* Adjusted font size for mobile */
 }
 
-.event-name {
-    width: 60%;
-    text-align: left;
-    
-    display: flex;
-    flex-direction: column;
-    font-size: 4vh;
-}
-.event-name p{
-    font-size: 3vh;
-}
-
-.time {
-    width: 20%;
-    text-align: right;
-    color: black;
-    
-    font-size: 3vh;
-    font-weight: bold;
-}
-
-#collection{
-    padding: 30px;
-    margin-top: -20px;
+/* Collection Section */
+#collection {
+    padding: 20px;
     background-color: white;
-    
-
-
 }
-#collection, h1{
-    font-size: 7vh;
-    text-align: center;
-}
+
 .gallery-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+#largeImage {
+    height: 50vh; /* Adjusted height for mobile */
+    width: 80vw; /* Adjusted width for mobile */
 }
-#largeImage{
-    
-    height: 80vh;
-    width: 65vw;
-    
-}
-.main-image img {
-    
-    
-    width: 70%;
-    height: auto;
-    margin-bottom: 20px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
+
 .thumbnail-container {
     display: flex;
-    justify-content: space-between;
-    width: 65%;
-    height: 13vh;
+    flex-wrap: wrap; /* Allow thumbnails to wrap */
+    justify-content: center;
+    gap: 10px; /* Adjusted spacing */
 }
 
 .thumbnail {
-    display: flex;
-    width: 15%;
+    width: 20vw; /* Adjusted width for mobile */
     height: auto;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-.thumbnail:hover {
-    transform: scale(1.1);
-    border-color: #888;
 }
 
-
-
-
-
-
-
-
-
-#support{
-    
-    margin-top: -30px;
-    padding-top: 30px;
-    background-color: white;
-    padding-bottom: 30px;
-    
-}
-
-
-#support-container{
-    display: flex;
-    flex-direction: row;
-    margin-top: 0px;
-    margin-bottom: 40px;
-    
-    
-}
-#kidsflexing{
-    width: 45vw;
-    height: 49vh;
-    padding: 45px;
-}
-#support-text-container-right{
-    display: flex;
-    flex-direction: column;
+/* Support Section */
+#support {
     padding: 20px;
-    justify-content: space-around;
-}
-#support-text-container-right h1{
-    font-size: 7vh;
-    margin-bottom: -10px;
+    background-color: white;
 }
 
-#support-text-container-right p{
-    font-size: 2.5vh;
-    padding: 0px;
-    text-align: center;
+#support-container {
+    display: flex;
+    flex-direction: column; /* Changed to column for mobile */
+    align-items: center;
 }
-#support-text-container-right button{
-    font-weight: bold;
-    padding: 15px;
-    color: white;
-    background-color: black;
-    border: 10px;
-    margin-bottom: 4vh;
-    border-radius: 3px;
+
+#kidsflexing {
+    width: 80vw; /* Adjusted width for mobile */
+    height: auto;
+}
+
+#support-text-container-right {
+    text-align: center; /* Center text for mobile */
+}
+
+#support-text-container-right h1 {
+    font-size: 5vh; /* Adjusted font size for mobile */
+}
+
+#support-text-container-right p {
+    font-size: 2.5vh;
+}
+
+#support-text-container-right button {
     font-size: 2vh;
 }
-#donate-btn:hover{
-    color: #CD7F32;
-    transform: scale(1.02);
-}
 
-
-
-#founders{
-    color: white;
-}
-#founders-container{
-    display: flex;
-    flex-direction: row;
-}
-#founders-portrait{
-    height: 85vh;
-    width: 37vw;
-    padding: 20px;
-}
-#founders-left-side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 50%;
-   
-}
-#founders-right-side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width: 50%;
-
-    
-}
-#founders-doc{
-    color: white;
-    padding-top: 20px;
-}
-
-
-#connect{
+/* Founders Section */
+#founders {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-#icon-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    color: black;
 }
 
-#lines-divider{
-    
+#founders-container {
+    display: flex;
+    flex-direction: column; /* Changed to column for mobile */
+    align-items: center;
+}
+
+#founders-portrait {
+    width: 80vw; /* Adjusted width for mobile */
+    height: auto;
+}
+
+#founders-left-side {
+    text-align: center; /* Center text for mobile */
+}
+
+#founders-doc {
+    color: black;
+    padding-top: 10px;
+}
+
+/* Connect Section */
+#connect {
     background-color: white;
-
-}
-#social-icon:hover{
-    transform: scale(1.1);
-    
+    text-align: center; /* Center text for mobile */
 }
 
-
-@media (max-width: 1200px) {
-    #logo {
-        width: 80vw;
-        height: auto;
-    }
-
-    #intro h1 {
-        font-size: 6vh;
-    }
-
-    #signup {
-        font-size: 1.8vh;
-    }
-
-    #about-header {
-        font-size: 6vh;
-    }
-
-    #events h1 {
-        font-size: 6vh;
-    }
-
-    #collection h1 {
-        font-size: 6vh;
-    }
-
-    #support-text-container-right h1 {
-        font-size: 6vh;
-    }
-
-    #founders-portrait {
-        height: 70vh;
-        width: 45vw;
-    }
+#icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjusted spacing */
 }
 
-@media (max-width: 992px) {
+#social-icon {
+    width: 10vw; /* Adjusted width for mobile */
+}
+
+#lines-divider {
+    background-color: white;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    #header-container {
+        flex-direction: row;
+    }
+
     #navbar-container {
-        flex-direction: column;
-        align-items: stretch;
-        width: 100%;
+        flex-direction: row;
     }
 
-    #navbar-container a {
-        padding: 10px;
-        font-size: 2vh;
-        text-align: center;
-        width: 100%; /* Ensure full width for each link */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    #about-lower-container {
+        flex-direction: row;
     }
 
-    #logo {
-        width: 90vw;
-        height: auto;
+    #support-container {
+        flex-direction: row;
     }
 
-    #intro h1 {
-        font-size: 5vh;
-    }
-
-    #signup {
-        font-size: 1.6vh;
-    }
-
-    #about-header {
-        font-size: 5vh;
-    }
-    #events h1 {
-        font-size: 5vh;
-    }
-
-    #collection h1 {
-        font-size: 5vh;
-    }
-
-    #support-text-container-right h1 {
-        font-size: 5vh;
-    }
-
-    #founders-portrait {
-        height: 60vh;
-        width: 50vw;
-    }
-}
-
-@media (max-width: 768px) {
-    #navbar-container {
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
-
-    #navbar-container a {
-        display: block;
-        padding: 10px;
-        font-size: 2.2vh;
-    }
-
-    #logo {
-        width: 95vw;
-        height: auto;
-    }
-
-    #intro h1 {
-        font-size: 4.5vh;
-    }
-
-    #signup {
-        font-size: 1.4vh;
-    }
-
-    #about-header {
-        font-size: 4.5vh;
-    }
-
-    #events h1 {
-        font-size: 4.5vh;
-    }
-
-    #collection h1 {
-        font-size: 4.5vh;
-    }
-
-    #support-text-container-right h1 {
-        font-size: 4.5vh;
-    }
-
-    #founders-portrait {
-        height: 50vh;
-        width: 60vw;
-    }
-
-    #kids-jumping {
-        width: 100vw;
-        height: auto;
-    }
-
-    #kidsflexing {
-        width: 100vw;
-        height: auto;
-    }
-
-    .thumbnail-container {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .thumbnail {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    #navbar-container a {
-        padding: 8px;
-        font-size: 2vh;
-    }
-
-    #logo {
-        width: 100vw;
-        height: auto;
-    }
-
-    #intro h1 {
-        font-size: 4vh;
-    }
-
-    #signup {
-        font-size: 1.2vh;
-    }
-
-    #about-header {
-        font-size: 4vh;
-    }
-
-    #events h1 {
-        font-size: 4vh;
-    }
-
-    #collection h1 {
-        font-size: 4vh;
-    }
-
-    #support-text-container-right h1 {
-        font-size: 4vh;
-    }
-
-    #founders-portrait {
-        height: 40vh;
-        width: 80vw;
-    }
-
-    #kids-jumping {
-        width: 100vw;
-        height: auto;
-    }
-
-    #kidsflexing {
-        width: 100vw;
-        height: auto;
-    }
-
-    .thumbnail {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
+    #founders-container {
+        flex-direction: row;
     }
 }

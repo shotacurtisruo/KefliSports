@@ -581,7 +581,9 @@ li:nth-child(even) {
         width: 90vw;
         height: auto;
     }
-
+    #connect h1{
+        font-size: 6vh;
+    }
     #contact-form input,
     #contact-form textarea {
         width: 100%;

@@ -457,6 +457,7 @@ li:nth-child(even) {
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
 #contact-form button {
     font-weight: bold;
     padding: 15px;
@@ -471,6 +472,18 @@ li:nth-child(even) {
 #contact-form button:hover {
     color: #CD7F32;
 }
+=======
+@media (max-width: 992px) {
+    #navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar-container a {
+        padding: 10px;
+        font-size: 2vh;
+    }
+>>>>>>> parent of 9f0ee77 (media queries)
 
 @media (max-width: 1024px) {
     #intro-container {
@@ -488,6 +501,7 @@ li:nth-child(even) {
     #about-header {
         font-size: 5vh;
     }
+<<<<<<< HEAD
 
     #events h1 {
         font-size: 5vh;
@@ -677,3 +691,6 @@ li:nth-child(even) {
 =======
 
 >>>>>>> parent of 60ad70f (media query update)
+=======
+}
+>>>>>>> parent of 9f0ee77 (media queries)

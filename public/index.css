@@ -42,6 +42,8 @@ section {
     justify-content: center;
     background-color: white;
     color: black;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and borders don't exceed container width */
 }
 
 #navbar-container a {
@@ -51,8 +53,9 @@ section {
     font-size: 2.4vh;
     background-color: white;
     font-weight: bold;
-    flex: 1 1 50%;
+    flex: 1 1 auto; /* Allow items to flex and shrink */
     text-align: center;
+    box-sizing: border-box; /* Ensure padding and borders don't exceed container width */
 }
 
 #navbar-container a:hover {
@@ -67,6 +70,8 @@ section {
     justify-content: center;
     padding: 20px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #signup {
@@ -99,21 +104,26 @@ section {
     background-color: black;
     justify-content: center;
     padding-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #logo {
     display: flex;
-    height: 80vh;
-    width: 60vw;
+    height: auto;
+    width: 90vw; /* Adjust width to fit within mobile view */
     padding-top: 20px;
     border: 5px solid white;
     border-radius: 10px;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 #about {
     background-color: white;
     padding: 40px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #about-header {
@@ -127,11 +137,13 @@ section {
 
 #about-lower-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack items vertically on mobile */
     gap: 3vh;
-    padding: 30px 40px;
+    padding: 30px 20px;
     background-color: white;
     justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 #about-lower-container-text {
@@ -142,6 +154,7 @@ section {
     background-color: white;
     width: 100%;
     max-width: 800px;
+    box-sizing: border-box;
 }
 
 #about-lower-container-text h2 {
@@ -159,6 +172,8 @@ section {
 #events {
     padding-top: 20px;
     background-color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #events h1 {
@@ -174,6 +189,9 @@ ul {
     list-style-type: none;
     padding: 20px;
     background-color: white;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 li {
@@ -184,6 +202,8 @@ li {
     align-items: center;
     background-color: white;
     height: 20vh;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 li:nth-child(even) {
@@ -221,6 +241,8 @@ li:nth-child(even) {
     padding: 30px;
     margin-top: -20px;
     background-color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #collection h1 {
@@ -235,8 +257,8 @@ li:nth-child(even) {
 }
 
 #largeImage {
-    height: 80vh;
-    width: 65vw;
+    height: auto;
+    width: 90vw; /* Adjust width to fit within mobile view */
 }
 
 .main-image img {
@@ -251,11 +273,11 @@ li:nth-child(even) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 65%;
+    width: 90%;
 }
 
 .thumbnail {
-    width: 80%;
+    width: 100%;
     height: auto;
     cursor: pointer;
     border: 2px solid black;
@@ -274,19 +296,23 @@ li:nth-child(even) {
     padding-top: 30px;
     background-color: white;
     padding-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #support-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Stack items vertically on mobile */
     justify-content: center;
     margin-top: 0px;
     margin-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #kidsflexing {
-    width: 45vw;
-    height: 49vh;
+    width: 90vw; /* Adjust width to fit within mobile view */
+    height: auto;
     padding: 45px;
 }
 
@@ -294,9 +320,11 @@ li:nth-child(even) {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    justify-content: space-around;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 #support-text-container-right h1 {
@@ -331,15 +359,18 @@ li:nth-child(even) {
 
 #founders-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Stack items vertically on mobile */
     justify-content: center;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #founders-portrait {
-    height: 85vh;
-    width: 37vw;
+    height: auto;
+    width: 90vw; /* Adjust width to fit within mobile view */
     padding: 20px;
+    box-sizing: border-box;
 }
 
 #founders-left-side {
@@ -348,7 +379,8 @@ li:nth-child(even) {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 50%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #founders-right-side {
@@ -356,7 +388,8 @@ li:nth-child(even) {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 50%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #founders-doc {
@@ -367,76 +400,81 @@ li:nth-child(even) {
 #connect {
     background-color: white;
     display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#connect h1 {
+    font-size: 6vh;
+    color: #CD7F32;
+    text-align: center;
+    margin: 0;
+}
+
+#connect p {
+    font-size: 3vh;
+    text-align: center;
+}
+
+#connect a {
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: 10px;
+    margin-top: 15px;
+    border-radius: 3px;
+    font-size: 2vh;
+    text-decoration: none;
+}
+
+#connect a:hover {
+    color: #CD7F32;
+}
+
+#contact-form {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0;
-}
-
-#icon-container {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-#social-icon:hover {
-    transform: scale(1.1);
+#contact-form input,
+#contact-form textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-@media (max-width: 1200px) {
-    #logo {
-        width: 80vw;
-        height: auto;
-    }
-
-    #intro h1 {
-        font-size: 6vh;
-    }
-
-    #signup {
-        font-size: 1.8vh;
-    }
-
-    #about-header {
-        font-size: 6vh;
-    }
-
-    #events h1 {
-        font-size: 6vh;
-    }
-
-    #collection h1 {
-        font-size: 6vh;
-    }
-
-    #support-text-container-right h1 {
-        font-size: 6vh;
-    }
-
-    #founders-portrait {
-        height: 70vh;
-        width: 45vw;
-    }
+#contact-form button {
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: 10px;
+    border-radius: 3px;
+    font-size: 2vh;
+    cursor: pointer;
 }
 
-@media (max-width: 992px) {
-    #navbar-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    }
+#contact-form button:hover {
+    color: #CD7F32;
+}
 
-    #navbar-container a {
-        padding: 10px;
-        font-size: 2vh;
-        text-align: center;
-        width: 50%;
-    }
-
-    #logo {
-        width: 90vw;
-        height: auto;
+@media (max-width: 1024px) {
+    #intro-container {
+        padding: 20px;
     }
 
     #intro h1 {
@@ -491,17 +529,14 @@ li:nth-child(even) {
 
 @media (max-width: 768px) {
     #navbar-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column; /* Stack nav items vertically on mobile */
         padding: 10px;
     }
 
     #navbar-container a {
-        display: block;
         padding: 10px;
         font-size: 2.2vh;
-        width: 50%;
+        width: 100%;
     }
 
     #logo {
@@ -626,3 +661,4 @@ li:nth-child(even) {
         margin-bottom: 10px;
     }
 }
+

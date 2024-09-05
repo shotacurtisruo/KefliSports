@@ -1,80 +1,71 @@
-body {
+
+body{
     background-color: black;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
 }
-
-#headerTitle {
+#headerTitle{
     background-color: white;
-    padding: 15px;
+   padding: 15px;
 }
-
-h1 {
+ 
+h1{
     color: #CD7F32;
 }
-
-p {
+p{
     font-size: 3.0vh;
 }
-
 section {
     margin: 0;
     padding: 0;
 }
-
-#header-container {
+#header-container{
     display: flex;
     justify-content: space-between;
     background-color: white;
     color: black;
-}
 
-#line-divider {
+    
+   
+    
+    
+
+
+}
+#line-divider{
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
+
 #navbar-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+ 
+    justify-content: flex-end;
+    align-items: center;
     background-color: white;
+  
     color: black;
-    width: 100%;
-    box-sizing: border-box; /* Ensure padding and borders don't exceed container width */
+    
 }
-
 #navbar-container a {
+    
     color: black;
     text-decoration: none;
     padding: 15px;
     font-size: 2.4vh;
     background-color: white;
     font-weight: bold;
-    flex: 1 1 auto; /* Allow items to flex and shrink */
-    text-align: center;
-    box-sizing: border-box; /* Ensure padding and borders don't exceed container width */
 }
-
-#navbar-container a:hover {
+#navbar-container a:hover{
     color: #CD7F32;
 }
-
-#intro {
+#intro{
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
+    
+
 }
 
-#signup {
+#signup{
     font-weight: bold;
     padding: 15px;
     color: black;
@@ -83,115 +74,128 @@ section {
     margin-bottom: 4vh;
     border-radius: 3px;
     font-size: 2vh;
+    
+    
 }
 
-#intro h1 {
+#intro h1{
+    text-align: center;
     font-size: 7vh;
     color: white;
-    margin: 0;
-}
+    
+   
 
-#intro p {
+}
+#intro p{
     color: white;
     margin-top: 0;
-    font-size: 3vh;
 }
-
-#intro-container {
+#intro-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 30px;
-    width: 100%;
-    box-sizing: border-box;
+    
 }
-
-#logo {
+#logo{
     display: flex;
-    height: auto;
-    width: 90vw; /* Adjust width to fit within mobile view */
+    height: 80vh;
+    width: 60vw;
     padding-top: 20px;
     border: 5px solid white;
     border-radius: 10px;
-    justify-content: center;
-    box-sizing: border-box;
 }
-
-#about {
+#about{
+    
     background-color: white;
-    padding: 40px 0;
-    width: 100%;
-    box-sizing: border-box;
+    align-items: center;
 }
 
-#about-header {
+#kids-jumping{
+    display: flex;
+    width: 50vw;
+    height: 49vh;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    padding-right: 45px;
+    background-color: white;
+}
+#about-header{
     padding-top: 30px;
     text-align: center;
     font-size: 7vh;
     background-color: white;
     color: #CD7F32;
-    margin: 0;
+    
 }
-
-#about-lower-container {
+#about-lower-container{
     display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
     gap: 3vh;
-    padding: 30px 20px;
+    padding-right: 40px;  /* Padding on the right side */
+    padding-bottom: 30px; /* Padding on the bottom side */
+    padding-left: 40px;   /* Padding on the left side */
+    padding-top: 0;  
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
+    
 
-#about-lower-container-text {
+}
+#about-lower-container-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
     background-color: white;
-    width: 100%;
-    max-width: 800px;
-    box-sizing: border-box;
 }
 
-#about-lower-container-text h2 {
+#about-lower-container-text h2{
     font-size: 3.0vh;
     padding-top: 50px;
     background-color: white;
+    
+    
+
 }
 
-#about-lower-container-text p {
+#about-lower-container-text p{
+    display: flex;
     text-align: center;
     font-size: 2.5vh;
     background-color: white;
+    
+    
 }
-
+#about-header, #events h1 {
+    margin: 0;
+    padding-top: 30px; /* Adjust as needed */
+}
 #events {
     padding-top: 20px;
     background-color: white;
-    width: 100%;
-    box-sizing: border-box;
 }
-
-#events h1 {
+#events h1{
     background-color: white;
     display: flex;
     justify-content: center;
     font-size: 7.0vh;
     color: #CD7F32;
-    margin: 0;
+    
+    
 }
 
+
+
+
+
+
+
 ul {
+
     list-style-type: none;
     padding: 20px;
     background-color: white;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 li {
@@ -202,30 +206,30 @@ li {
     align-items: center;
     background-color: white;
     height: 20vh;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 li:nth-child(even) {
     background-color: #f9f9f9;
+
 }
 
 .date {
     width: 20%;
     font-weight: bold;
     color: black;
+    
     font-size: 3vh;
 }
 
 .event-name {
     width: 60%;
     text-align: left;
+    
     display: flex;
     flex-direction: column;
     font-size: 4vh;
 }
-
-.event-name p {
+.event-name p{
     font-size: 3vh;
 }
 
@@ -233,111 +237,113 @@ li:nth-child(even) {
     width: 20%;
     text-align: right;
     color: black;
+    
     font-size: 3vh;
     font-weight: bold;
 }
 
-#collection {
+#collection{
     padding: 30px;
     margin-top: -20px;
     background-color: white;
-    width: 100%;
-    box-sizing: border-box;
-}
+    
 
-#collection h1 {
+
+}
+#collection, h1{
     font-size: 7vh;
     text-align: center;
 }
-
 .gallery-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-#largeImage {
-    height: auto;
-    width: 90vw; /* Adjust width to fit within mobile view */
 }
-
+#largeImage{
+    
+    height: 80vh;
+    width: 65vw;
+    
+}
 .main-image img {
+    
+    
     width: 70%;
     height: auto;
     margin-bottom: 20px;
     border: 2px solid black;
     border-radius: 10px;
 }
-
 .thumbnail-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
+    justify-content: space-between;
+    width: 65%;
+    height: 13vh;
 }
 
 .thumbnail {
-    width: 100%;
+    display: flex;
+    width: 15%;
     height: auto;
     cursor: pointer;
     border: 2px solid black;
     border-radius: 10px;
-    margin-bottom: 10px;
     transition: transform 0.3s;
 }
-
 .thumbnail:hover {
     transform: scale(1.1);
     border-color: #888;
 }
 
-#support {
+
+
+
+
+
+
+
+
+#support{
+    
     margin-top: -30px;
     padding-top: 30px;
     background-color: white;
     padding-bottom: 30px;
-    width: 100%;
-    box-sizing: border-box;
+    
 }
 
-#support-container {
+
+#support-container{
     display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
-    justify-content: center;
+    flex-direction: row;
     margin-top: 0px;
     margin-bottom: 40px;
-    width: 100%;
-    box-sizing: border-box;
+    
+    
 }
-
-#kidsflexing {
-    width: 90vw; /* Adjust width to fit within mobile view */
-    height: auto;
+#kidsflexing{
+    width: 45vw;
+    height: 49vh;
     padding: 45px;
 }
-
-#support-text-container-right {
+#support-text-container-right{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    justify-content: center;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    box-sizing: border-box;
+    justify-content: space-around;
 }
-
-#support-text-container-right h1 {
+#support-text-container-right h1{
     font-size: 7vh;
     margin-bottom: -10px;
 }
 
-#support-text-container-right p {
+#support-text-container-right p{
     font-size: 2.5vh;
     padding: 0px;
+    text-align: center;
 }
-
-#support-text-container-right button {
+#support-text-container-right button{
     font-weight: bold;
     padding: 15px;
     color: white;
@@ -347,134 +353,121 @@ li:nth-child(even) {
     border-radius: 3px;
     font-size: 2vh;
 }
-
-#donate-btn:hover {
+#donate-btn:hover{
     color: #CD7F32;
     transform: scale(1.02);
 }
 
-#founders {
+
+
+#founders{
     color: white;
 }
-
-#founders-container {
+#founders-container{
     display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    flex-direction: row;
 }
-
-#founders-portrait {
-    height: auto;
-    width: 90vw; /* Adjust width to fit within mobile view */
+#founders-portrait{
+    height: 85vh;
+    width: 37vw;
     padding: 20px;
-    box-sizing: border-box;
 }
-
-#founders-left-side {
+#founders-left-side{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    width: 50%;
+   
 }
-
-#founders-right-side {
+#founders-right-side{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-}
+    width: 50%;
 
-#founders-doc {
+    
+}
+#founders-doc{
     color: white;
     padding-top: 20px;
 }
 
-#connect {
+
+#connect{
     background-color: white;
-    display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#connect h1 {
-    font-size: 6vh;
-    color: #CD7F32;
-    text-align: center;
-    margin: 0;
-}
-
-#connect p {
-    font-size: 3vh;
-    text-align: center;
-}
-
-#connect a {
-    font-weight: bold;
-    padding: 15px;
-    color: white;
-    background-color: black;
-    border: 10px;
-    margin-top: 15px;
-    border-radius: 3px;
-    font-size: 2vh;
-    text-decoration: none;
-}
-
-#connect a:hover {
-    color: #CD7F32;
-}
-
-#contact-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+#icon-container{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding: 20px;
+}
+
+#lines-divider{
+    
     background-color: white;
-    width: 100%;
-    box-sizing: border-box;
+
+}
+#social-icon:hover{
+    transform: scale(1.1);
+    
 }
 
-#contact-form input,
-#contact-form textarea {
-    width: 90%;
-    max-width: 500px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+
+@media (max-width: 1200px) {
+    #logo {
+        width: 80vw;
+        height: auto;
+    }
+
+    #intro h1 {
+        font-size: 6vh;
+    }
+
+    #signup {
+        font-size: 1.8vh;
+    }
+
+    #about-header {
+        font-size: 6vh;
+    }
+
+    #events h1 {
+        font-size: 6vh;
+    }
+
+    #collection h1 {
+        font-size: 6vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 6vh;
+    }
+
+    #founders-portrait {
+        height: 70vh;
+        width: 45vw;
+    }
 }
 
-#contact-form button {
-    font-weight: bold;
-    padding: 15px;
-    color: white;
-    background-color: black;
-    border: 10px;
-    border-radius: 3px;
-    font-size: 2vh;
-    cursor: pointer;
-}
+@media (max-width: 992px) {
+    #navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-#contact-form button:hover {
-    color: #CD7F32;
-}
+    #navbar-container a {
+        padding: 10px;
+        font-size: 2vh;
+    }
 
-@media (max-width: 1024px) {
-    #intro-container {
-        padding: 20px;
+    #logo {
+        width: 90vw;
+        height: auto;
     }
 
     #intro h1 {
@@ -488,192 +481,4 @@ li:nth-child(even) {
     #about-header {
         font-size: 5vh;
     }
-
-    #events h1 {
-        font-size: 5vh;
-    }
-    .date,
-   
-    .time {
-        font-size: 2.2vh; /* Slightly smaller font size for medium screens */
-    }
-
-    #collection h1 {
-        font-size: 5vh;
-    }
-
-    #support-text-container-right h1 {
-        font-size: 5vh;
-    }
-
-    #founders-portrait {
-        height: 60vh;
-        width: 50vw;
-    }
-
-    #kids-jumping {
-        width: 100vw;
-        height: auto;
-    }
-
-    #kidsflexing {
-        width: 100vw;
-        height: auto;
-    }
-
-    .thumbnail-container {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .thumbnail {
-        width: 100%;
-        margin-bottom: 10px;
-    }
 }
-
-@media (max-width: 768px) {
-    #navbar-container {
-        flex-direction: column; /* Stack nav items vertically on mobile */
-        padding: 10px;
-    }
-
-    #navbar-container a {
-        padding: 10px;
-        font-size: 2.2vh;
-        width: 100%;
-    }
-
-    #logo {
-        width: 95vw;
-        height: auto;
-    }
-
-    #intro {
-        padding: 20px;
-        text-align: center;
-    }
-
-    #intro h1 {
-        font-size: 4.5vh;
-    }
-
-    #signup {
-        font-size: 1.4vh;
-    }
-
-    #about-header {
-        font-size: 4.5vh;
-    }
-
-    #events h1 {
-        font-size: 4.5vh;
-    }
-    .date,
-    .time {
-        font-size: 2vh; /* Smaller font size for mobile screens */
-    }
-    #collection h1 {
-        font-size: 4.5vh;
-    }
-
-    #support-text-container-right h1 {
-        font-size: 4.5vh;
-    }
-
-    #founders-portrait {
-        height: 50vh;
-        width: 60vw;
-    }
-
-    #kids-jumping {
-        width: 100vw;
-        height: auto;
-    }
-
-    #kidsflexing {
-        width: 100vw;
-        height: auto;
-    }
-
-    .thumbnail-container {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .thumbnail {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    #navbar-container a {
-        padding: 8px;
-        font-size: 2vh;
-        width: 100%;
-    }
-
-    #logo {
-        width: 100vw;
-        height: auto;
-    }
-
-    #intro {
-        padding: 20px;
-        text-align: center;
-    }
-
-    #intro h1 {
-        font-size: 4vh;
-    }
-
-    #signup {
-        font-size: 1.2vh;
-    }
-
-    #about-header {
-        font-size: 4vh;
-    }
-
-    #events h1 {
-        font-size: 4vh;
-    }
-    .date,
-    .time {
-        font-size: 1.8vh; /* Further reduced font size for very small screens */
-    }
-
-    #collection h1 {
-        font-size: 4vh;
-    }
-
-    #support-text-container-right h1 {
-        font-size: 4vh;
-    }
-
-    #founders-portrait {
-        height: 40vh;
-        width: 80vw;
-    }
-
-    #kids-jumping {
-        width: 100vw;
-        height: auto;
-    }
-
-    #kidsflexing {
-        width: 100vw;
-        height: auto;
-    }
-
-    .thumbnail {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-}
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 60ad70f (media query update)

@@ -523,6 +523,9 @@ li:nth-child(even) {
         height: auto;
         padding: 10px;
     }
+    #collection h1{
+        font-size: 6vh;
+    }
 
     .thumbnail-container {
         flex-direction: column;

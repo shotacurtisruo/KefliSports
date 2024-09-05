@@ -534,14 +534,14 @@ li:nth-child(even) {
         }
 
     .thumbnail-container {
-        flex-direction: column;
-        width: 90%;
+        flex-direction: row;
+        width: 15%;
         height: auto;
     }
 
     .thumbnail {
-        width: 100%; /* Adjust thumbnails for mobile */
-        height: auto;
+        width: 10vw; /* Adjust thumbnails for mobile */
+        height: 10vh;
     }
 
     #support-container {

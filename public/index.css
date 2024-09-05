@@ -488,7 +488,17 @@ li:nth-child(even) {
     #events h1 {
         font-size: 6vw; /* Responsive font size */
     }
+    #date {
+        font-size: 2vw;
+    }
+    #event-name{
+        font-size: 3vh;
 
+    }
+
+    #time{
+        font-size: 2vw;
+    }
     #about-lower-container {
         flex-direction: column;
         padding: 10px;
@@ -505,7 +515,7 @@ li:nth-child(even) {
     }
 
     #kids-jumping {
-        width: 90vw; /* Adjust width for mobile */
+        width: 75vw; /* Adjust width for mobile */
         height: auto;
         padding: 10px;
     }

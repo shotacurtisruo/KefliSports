@@ -484,6 +484,11 @@ li:nth-child(even) {
     #events h1 {
         font-size: 5vh;
     }
+    .date,
+    .event-name,
+    .time {
+        font-size: 2.2vh; /* Slightly smaller font size for medium screens */
+    }
 
     #collection h1 {
         font-size: 5vh;
@@ -556,7 +561,11 @@ li:nth-child(even) {
     #events h1 {
         font-size: 4.5vh;
     }
-
+    .date,
+    .event-name,
+    .time {
+        font-size: 2vh; /* Smaller font size for mobile screens */
+    }
     #collection h1 {
         font-size: 4.5vh;
     }
@@ -622,6 +631,11 @@ li:nth-child(even) {
 
     #events h1 {
         font-size: 4vh;
+    }
+    .date,
+    .event-name,
+    .time {
+        font-size: 1.8vh; /* Further reduced font size for very small screens */
     }
 
     #collection h1 {

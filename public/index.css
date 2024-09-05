@@ -532,10 +532,12 @@ li:nth-child(even) {
         font-size: 6vw;
 
         }
-    .gallery-container{
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-    }
+        
+     }
     .thumbnail-container {
         flex-direction: row;
         width: 15%;

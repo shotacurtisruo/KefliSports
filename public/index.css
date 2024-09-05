@@ -493,6 +493,7 @@ li:nth-child(even) {
     }
     .event-name{
         font-size: 2vh;
+        text-align: center;
 
     }
     .event-name p{

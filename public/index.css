@@ -43,7 +43,7 @@ section {
     background-color: white;
     color: black;
     width: 100%;
-    box-sizing: border-box; /* Ensure padding and borders don't exceed container width */
+    box-sizing: border-box;
 }
 
 #navbar-container a {
@@ -53,9 +53,9 @@ section {
     font-size: 2.4vh;
     background-color: white;
     font-weight: bold;
-    flex: 1 1 auto; /* Allow items to flex and shrink */
+    flex: 1 1 auto;
     text-align: center;
-    box-sizing: border-box; /* Ensure padding and borders don't exceed container width */
+    box-sizing: border-box;
 }
 
 #navbar-container a:hover {
@@ -111,7 +111,7 @@ section {
 #logo {
     display: flex;
     height: auto;
-    width: 90vw; /* Adjust width to fit within mobile view */
+    width: 90vw;
     padding-top: 20px;
     border: 5px solid white;
     border-radius: 10px;
@@ -137,7 +137,7 @@ section {
 
 #about-lower-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
+    flex-direction: column;
     gap: 3vh;
     padding: 30px 20px;
     background-color: white;
@@ -196,12 +196,13 @@ ul {
 
 li {
     display: flex;
+    flex-direction: row; /* Align items horizontally */
     justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid #ddd;
     align-items: center;
     background-color: white;
-    height: 20vh;
+    height: auto;
     width: 100%;
     box-sizing: border-box;
 }
@@ -214,26 +215,25 @@ li:nth-child(even) {
     width: 20%;
     font-weight: bold;
     color: black;
-    font-size: 3vh;
+    font-size: 2.5vh; /* Reduced font size to avoid overlap */
+    text-align: left;
 }
 
 .event-name {
     width: 60%;
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    font-size: 4vh;
+    font-size: 2.5vh; /* Adjusted font size */
 }
 
 .event-name p {
-    font-size: 3vh;
+    font-size: 2.5vh; /* Adjusted font size */
 }
 
 .time {
     width: 20%;
     text-align: right;
     color: black;
-    font-size: 3vh;
+    font-size: 2.5vh; /* Reduced font size */
     font-weight: bold;
 }
 
@@ -258,7 +258,7 @@ li:nth-child(even) {
 
 #largeImage {
     height: auto;
-    width: 90vw; /* Adjust width to fit within mobile view */
+    width: 90vw;
 }
 
 .main-image img {
@@ -271,18 +271,18 @@ li:nth-child(even) {
 
 .thumbnail-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Allow thumbnails to wrap */
+    gap: 10px; /* Space between thumbnails */
     width: 90%;
+    justify-content: center; /* Center thumbnails horizontally */
 }
 
 .thumbnail {
-    width: 100%;
+    width: calc(33.33% - 20px); /* Ensure three thumbnails per row with spacing */
     height: auto;
     cursor: pointer;
     border: 2px solid black;
     border-radius: 10px;
-    margin-bottom: 10px;
     transition: transform 0.3s;
 }
 
@@ -302,7 +302,7 @@ li:nth-child(even) {
 
 #support-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
+    flex-direction: column;
     justify-content: center;
     margin-top: 0px;
     margin-bottom: 40px;
@@ -311,9 +311,10 @@ li:nth-child(even) {
 }
 
 #kidsflexing {
-    width: 90vw; /* Adjust width to fit within mobile view */
+    width: 90vw;
     height: auto;
     padding: 45px;
+    box-sizing: border-box;
 }
 
 #support-text-container-right {
@@ -359,7 +360,7 @@ li:nth-child(even) {
 
 #founders-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
+    flex-direction: column;
     justify-content: center;
     padding: 20px;
     width: 100%;
@@ -368,7 +369,7 @@ li:nth-child(even) {
 
 #founders-portrait {
     height: auto;
-    width: 90vw; /* Adjust width to fit within mobile view */
+    width: 90vw;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -392,18 +393,9 @@ li:nth-child(even) {
     box-sizing: border-box;
 }
 
-#founders-doc {
-    color: white;
-    padding-top: 20px;
-}
-
 #connect {
-    background-color: white;
-    display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
-    align-items: center;
-    justify-content: center;
     padding: 20px;
+    background-color: white;
     width: 100%;
     box-sizing: border-box;
 }
@@ -661,4 +653,5 @@ li:nth-child(even) {
         margin-bottom: 10px;
     }
 }
+
 

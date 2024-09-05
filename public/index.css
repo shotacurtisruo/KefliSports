@@ -25,7 +25,7 @@ section {
 
     
    
-    
+   
     
 
 
@@ -440,4 +440,127 @@ li:nth-child(even) {
 #social-icon:hover{
     transform: scale(1.1);
     
+}
+/* General mobile styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust body font size for mobile readability */
+    }
+
+    #header-container,
+    #navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar-container {
+        padding: 0;
+    }
+
+    #navbar-container a {
+        font-size: 4vw; /* Adjust font size for mobile */
+        padding: 10px;
+    }
+
+    #headerTitle,
+    #intro,
+    #about,
+    #events,
+    #collection,
+    #support,
+    #founders,
+    #connect {
+        padding: 10px;
+        text-align: center; /* Center-align text on mobile */
+    }
+
+    #intro h1 {
+        font-size: 6vw; /* Responsive font size */
+    }
+
+    #intro p,
+    #about-lower-container-text p,
+    #events h1 {
+        font-size: 4vw; /* Responsive font size */
+    }
+
+    #about-header,
+    #events h1 {
+        font-size: 6vw; /* Responsive font size */
+    }
+
+    #about-lower-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #about-lower-container-text {
+        align-items: center;
+    }
+
+    #logo {
+        width: 90vw; /* Adjust logo size for mobile */
+        height: auto;
+        padding-top: 10px;
+    }
+
+    #kids-jumping {
+        width: 90vw; /* Adjust width for mobile */
+        height: auto;
+        padding: 10px;
+    }
+
+    .thumbnail-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .thumbnail {
+        width: 100%; /* Adjust thumbnails for mobile */
+        height: auto;
+    }
+
+    #support-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #support-text-container-right {
+        text-align: center;
+    }
+
+    #donate-btn {
+        font-size: 4vw; /* Responsive font size for button */
+    }
+
+    #founders-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #founders-portrait {
+        width: 90vw;
+        height: auto;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Navbar collapse to two rows for mobile */
+@media (max-width: 768px) {
+    #navbar-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #navbar-container a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }

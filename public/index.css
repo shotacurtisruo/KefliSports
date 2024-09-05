@@ -1,8 +1,5 @@
 body {
     background-color: black;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 #headerTitle {
@@ -38,12 +35,10 @@ section {
 
 #navbar-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     background-color: white;
     color: black;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 #navbar-container a {
@@ -53,9 +48,6 @@ section {
     font-size: 2.4vh;
     background-color: white;
     font-weight: bold;
-    flex: 1 1 auto;
-    text-align: center;
-    box-sizing: border-box;
 }
 
 #navbar-container a:hover {
@@ -64,14 +56,6 @@ section {
 
 #intro {
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 #signup {
@@ -86,15 +70,14 @@ section {
 }
 
 #intro h1 {
+    text-align: center;
     font-size: 7vh;
     color: white;
-    margin: 0;
 }
 
 #intro p {
     color: white;
     margin-top: 0;
-    font-size: 3vh;
 }
 
 #intro-container {
@@ -102,28 +85,33 @@ section {
     flex-direction: column;
     align-items: center;
     background-color: black;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 30px;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 #logo {
     display: flex;
-    height: auto;
-    width: 90vw;
+    height: 80vh;
+    width: 60vw;
     padding-top: 20px;
     border: 5px solid white;
     border-radius: 10px;
-    justify-content: center;
-    box-sizing: border-box;
 }
 
 #about {
     background-color: white;
-    padding: 40px 0;
-    width: 100%;
-    box-sizing: border-box;
+    align-items: center;
+}
+
+#kids-jumping {
+    display: flex;
+    width: 50vw;
+    height: 49vh;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    padding-right: 45px;
+    background-color: white;
 }
 
 #about-header {
@@ -132,18 +120,16 @@ section {
     font-size: 7vh;
     background-color: white;
     color: #CD7F32;
-    margin: 0;
 }
 
 #about-lower-container {
     display: flex;
-    flex-direction: column;
     gap: 3vh;
-    padding: 30px 20px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-top: 0;
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
 }
 
 #about-lower-container-text {
@@ -152,9 +138,6 @@ section {
     align-items: center;
     padding-top: 20px;
     background-color: white;
-    width: 100%;
-    max-width: 800px;
-    box-sizing: border-box;
 }
 
 #about-lower-container-text h2 {
@@ -164,9 +147,15 @@ section {
 }
 
 #about-lower-container-text p {
+    display: flex;
     text-align: center;
     font-size: 2.5vh;
     background-color: white;
+}
+
+#about-header, #events h1 {
+    margin: 0;
+    padding-top: 30px;
 }
 
 #events {
@@ -196,7 +185,7 @@ ul {
 
 li {
     display: flex;
-    flex-direction: row; /* Align items horizontally */
+    flex-direction: row;
     justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid #ddd;
@@ -211,29 +200,27 @@ li:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+.date, .event-name, .time {
+    font-size: 2.5vh;
+    overflow-wrap: break-word;
+}
+
 .date {
-    width: 20%;
+    flex: 0 0 20%;
+    text-align: left;
     font-weight: bold;
     color: black;
-    font-size: 2.5vh; /* Reduced font size to avoid overlap */
-    text-align: left;
 }
 
 .event-name {
-    width: 60%;
+    flex: 1 1 60%;
     text-align: left;
-    font-size: 2.5vh; /* Adjusted font size */
-}
-
-.event-name p {
-    font-size: 2.5vh; /* Adjusted font size */
 }
 
 .time {
-    width: 20%;
+    flex: 0 0 20%;
     text-align: right;
     color: black;
-    font-size: 2.5vh; /* Reduced font size */
     font-weight: bold;
 }
 
@@ -241,8 +228,6 @@ li:nth-child(even) {
     padding: 30px;
     margin-top: -20px;
     background-color: white;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 #collection h1 {
@@ -257,8 +242,8 @@ li:nth-child(even) {
 }
 
 #largeImage {
-    height: auto;
-    width: 90vw;
+    height: 80vh;
+    width: 65vw;
 }
 
 .main-image img {
@@ -271,14 +256,14 @@ li:nth-child(even) {
 
 .thumbnail-container {
     display: flex;
-    flex-wrap: wrap; /* Allow thumbnails to wrap */
-    gap: 10px; /* Space between thumbnails */
-    width: 90%;
-    justify-content: center; /* Center thumbnails horizontally */
+    justify-content: space-between;
+    width: 65%;
+    height: 13vh;
 }
 
 .thumbnail {
-    width: calc(33.33% - 20px); /* Ensure three thumbnails per row with spacing */
+    display: flex;
+    width: 15%;
     height: auto;
     cursor: pointer;
     border: 2px solid black;
@@ -296,36 +281,26 @@ li:nth-child(even) {
     padding-top: 30px;
     background-color: white;
     padding-bottom: 30px;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 #support-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     margin-top: 0px;
     margin-bottom: 40px;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 #kidsflexing {
-    width: 90vw;
-    height: auto;
+    width: 45vw;
+    height: 49vh;
     padding: 45px;
-    box-sizing: border-box;
 }
 
 #support-text-container-right {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    justify-content: center;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    box-sizing: border-box;
+    justify-content: space-around;
 }
 
 #support-text-container-right h1 {
@@ -336,6 +311,7 @@ li:nth-child(even) {
 #support-text-container-right p {
     font-size: 2.5vh;
     padding: 0px;
+    text-align: center;
 }
 
 #support-text-container-right button {
@@ -360,18 +336,13 @@ li:nth-child(even) {
 
 #founders-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    flex-direction: row;
 }
 
 #founders-portrait {
-    height: auto;
-    width: 90vw;
+    height: 85vh;
+    width: 37vw;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 #founders-left-side {
@@ -380,8 +351,7 @@ li:nth-child(even) {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    width: 50%;
 }
 
 #founders-right-side {
@@ -389,213 +359,129 @@ li:nth-child(even) {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    width: 50%;
+}
+
+#founders-doc {
+    color: white;
+    padding-top: 20px;
 }
 
 #connect {
-    padding: 20px;
     background-color: white;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#connect h1 {
-    font-size: 6vh;
-    color: #CD7F32;
-    text-align: center;
-    margin: 0;
-}
-
-#connect p {
-    font-size: 3vh;
-    text-align: center;
-}
-
-#connect a {
-    font-weight: bold;
-    padding: 15px;
-    color: white;
-    background-color: black;
-    border: 10px;
-    margin-top: 15px;
-    border-radius: 3px;
-    font-size: 2vh;
-    text-decoration: none;
-}
-
-#connect a:hover {
-    color: #CD7F32;
-}
-
-#contact-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+#icon-container {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding: 20px;
+}
+
+#lines-divider {
     background-color: white;
-    width: 100%;
-    box-sizing: border-box;
 }
 
-#contact-form input,
-#contact-form textarea {
-    width: 90%;
-    max-width: 500px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+#social-icon:hover {
+    transform: scale(1.1);
 }
 
-#contact-form button {
-    font-weight: bold;
-    padding: 15px;
-    color: white;
-    background-color: black;
-    border: 10px;
-    border-radius: 3px;
-    font-size: 2vh;
-    cursor: pointer;
-}
-
-#contact-form button:hover {
-    color: #CD7F32;
-}
-
-@media (max-width: 1024px) {
-    #intro-container {
-        padding: 20px;
+@media (max-width: 1200px) {
+    #logo {
+        width: 80vw;
+        height: auto;
     }
 
     #intro h1 {
-        font-size: 5vh;
+        font-size: 6vh;
     }
 
     #signup {
-        font-size: 1.6vh;
+        font-size: 1.8vh;
     }
 
     #about-header {
-        font-size: 5vh;
+        font-size: 6vh;
     }
 
     #events h1 {
-        font-size: 5vh;
+        font-size: 6vh;
     }
 
     #collection h1 {
-        font-size: 5vh;
+        font-size: 6vh;
     }
 
     #support-text-container-right h1 {
-        font-size: 5vh;
+        font-size: 6vh;
+    }
+
+    #founders-portrait {
+        height: 70vh;
+        width: 45vw;
+    }
+}
+
+@media (max-width: 992px) {
+    #navbar-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #navbar-container a {
+        padding: 10px;
+        font-size: 2vh;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #logo {
+        width: 90vw;
+        height: auto;
+    }
+
+    #intro h1 {
+        font-size: 5.5vh;
+    }
+
+    #signup {
+        font-size: 1.5vh;
+    }
+
+    #about-header {
+        font-size: 5.5vh;
+    }
+
+    #events h1 {
+        font-size: 5.5vh;
+    }
+
+    #collection h1 {
+        font-size: 5.5vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 5.5vh;
     }
 
     #founders-portrait {
         height: 60vh;
         width: 50vw;
     }
-
-    #kids-jumping {
-        width: 100vw;
-        height: auto;
-    }
-
-    #kidsflexing {
-        width: 100vw;
-        height: auto;
-    }
-
-    .thumbnail-container {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .thumbnail {
-        width: 100%;
-        margin-bottom: 10px;
-    }
 }
 
 @media (max-width: 768px) {
     #navbar-container {
-        flex-direction: column; /* Stack nav items vertically on mobile */
-        padding: 10px;
-    }
-
-    #navbar-container a {
-        padding: 10px;
-        font-size: 2.2vh;
-        width: 100%;
-    }
-
-    #logo {
-        width: 95vw;
-        height: auto;
-    }
-
-    #intro {
-        padding: 20px;
-        text-align: center;
-    }
-
-    #intro h1 {
-        font-size: 4.5vh;
-    }
-
-    #signup {
-        font-size: 1.4vh;
-    }
-
-    #about-header {
-        font-size: 4.5vh;
-    }
-
-    #events h1 {
-        font-size: 4.5vh;
-    }
-
-    #collection h1 {
-        font-size: 4.5vh;
-    }
-
-    #support-text-container-right h1 {
-        font-size: 4.5vh;
-    }
-
-    #founders-portrait {
-        height: 50vh;
-        width: 60vw;
-    }
-
-    #kids-jumping {
-        width: 100vw;
-        height: auto;
-    }
-
-    #kidsflexing {
-        width: 100vw;
-        height: auto;
-    }
-
-    .thumbnail-container {
         flex-direction: column;
-        width: 90%;
+        align-items: center;
     }
 
-    .thumbnail {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 480px) {
     #navbar-container a {
-        padding: 8px;
-        font-size: 2vh;
-        width: 100%;
+        font-size: 1.8vh;
     }
 
     #logo {
@@ -603,13 +489,8 @@ li:nth-child(even) {
         height: auto;
     }
 
-    #intro {
-        padding: 20px;
-        text-align: center;
-    }
-
     #intro h1 {
-        font-size: 4vh;
+        font-size: 5vh;
     }
 
     #signup {
@@ -617,41 +498,63 @@ li:nth-child(even) {
     }
 
     #about-header {
-        font-size: 4vh;
+        font-size: 5vh;
     }
 
     #events h1 {
-        font-size: 4vh;
+        font-size: 5vh;
     }
 
     #collection h1 {
-        font-size: 4vh;
+        font-size: 5vh;
     }
 
     #support-text-container-right h1 {
-        font-size: 4vh;
+        font-size: 5vh;
+    }
+
+    #founders-portrait {
+        height: 50vh;
+        width: 60vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar-container a {
+        font-size: 1.6vh;
+    }
+
+    #logo {
+        width: 100vw;
+        height: auto;
+    }
+
+    #intro h1 {
+        font-size: 4.5vh;
+    }
+
+    #signup {
+        font-size: 1.0vh;
+    }
+
+    #about-header {
+        font-size: 4.5vh;
+    }
+
+    #events h1 {
+        font-size: 4.5vh;
+    }
+
+    #collection h1 {
+        font-size: 4.5vh;
+    }
+
+    #support-text-container-right h1 {
+        font-size: 4.5vh;
     }
 
     #founders-portrait {
         height: 40vh;
-        width: 80vw;
-    }
-
-    #kids-jumping {
-        width: 100vw;
-        height: auto;
-    }
-
-    #kidsflexing {
-        width: 100vw;
-        height: auto;
-    }
-
-    .thumbnail {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
+        width: 70vw;
     }
 }
-
-

@@ -7,7 +7,9 @@ body{
    padding: 15px;
 }
  
-
+h1{
+    color: #CD7F32;
+}
 p{
     font-size: 3.0vh;
 }
@@ -28,6 +30,11 @@ section {
 
 
 }
+#line-divider{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
 
 
 #navbar-container {
@@ -44,9 +51,13 @@ section {
     
     color: black;
     text-decoration: none;
-    padding: 10px;
-    font-size: 2vh;
+    padding: 15px;
+    font-size: 2.4vh;
     background-color: white;
+    font-weight: bold;
+}
+#navbar-container a:hover{
+    color: #CD7F32;
 }
 #intro{
     background-color: black;
@@ -99,6 +110,7 @@ section {
 #about{
     
     background-color: white;
+    align-items: center;
 }
 
 #kids-jumping{
@@ -160,6 +172,7 @@ section {
     padding-top: 30px; /* Adjust as needed */
 }
 #events {
+    padding-top: 20px;
     background-color: white;
 }
 #events h1{
@@ -181,7 +194,7 @@ section {
 ul {
 
     list-style-type: none;
-    padding: 0;
+    padding: 20px;
     background-color: white;
 }
 
@@ -225,7 +238,7 @@ li:nth-child(even) {
     text-align: right;
     color: black;
     
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -295,20 +308,41 @@ li:nth-child(even) {
     margin-top: -30px;
     padding-top: 30px;
     background-color: white;
-    align-items: center;
-}
-#support h1{
-    font-size: 7vh;
-    color: #CD7F32;
+    padding-bottom: 30px;
     
 }
-#support p{
+
+
+#support-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    
+    
+}
+#kidsflexing{
+    width: 45vw;
+    height: 49vh;
+    padding: 45px;
+}
+#support-text-container-right{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    color: black;
+    padding: 20px;
+    justify-content: space-around;
 }
-#donate{
+#support-text-container-right h1{
+    font-size: 7vh;
+    margin-bottom: -10px;
+}
+
+#support-text-container-right p{
+    font-size: 2.5vh;
+    padding: 0px;
+    text-align: center;
+}
+#support-text-container-right button{
     font-weight: bold;
     padding: 15px;
     color: white;
@@ -317,16 +351,67 @@ li:nth-child(even) {
     margin-bottom: 4vh;
     border-radius: 3px;
     font-size: 2vh;
-    
+}
+#donate-btn:hover{
+    color: #CD7F32;
+    transform: scale(1.02);
 }
 
 
 
+#founders{
+    color: white;
+}
+#founders-container{
+    display: flex;
+    flex-direction: row;
+}
+#founders-portrait{
+    height: 85vh;
+    width: 37vw;
+    padding: 20px;
+}
+#founders-left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 50%;
+   
+}
+#founders-right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
 
-
-
+    
+}
+#founders-doc{
+    color: white;
+    padding-top: 20px;
+}
 
 
 #connect{
     background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+#icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#lines-divider{
+    
+    background-color: white;
+
+}
+#social-icon:hover{
+    transform: scale(1.1);
+    
 }

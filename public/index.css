@@ -77,6 +77,16 @@ section {
     
     
 }
+#volunteer{
+    font-weight: bold;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    border: 10px;
+    margin-bottom: 4vh;
+    border-radius: 3px;
+    font-size: 2vh; 
+}
 
 #intro h1{
     text-align: center;

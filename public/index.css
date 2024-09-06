@@ -578,8 +578,8 @@ li:nth-child(even) {
     }
 
     #founders-portrait {
-        width: 90vw;
-        height: auto;
+        width: auto;
+        height: 70vh;
     }
     #connect h1{
         font-size: 4vh;

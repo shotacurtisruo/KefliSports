@@ -6,7 +6,12 @@ body{
     background-color: white;
    padding: 15px;
 }
- 
+p1{
+    font-size: 2vh;
+    padding: 10px;
+    color: red;
+    font-weight: bold;
+}
 h1{
     color: #CD7F32;
 }

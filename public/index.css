@@ -441,7 +441,8 @@ li:nth-child(even) {
     display: inline-block;
     margin: 0 10px; /* Space between names */
     font-size: 18px;
-    animation: colorChange 4s infinite;
+    
+    animation: colorChange 6s infinite;
 
 }
 @keyframes colorChange{
@@ -486,15 +487,7 @@ li:nth-child(even) {
     }
 }
 
-#donors-right-container{
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    flex: 1;
-    
 
-}
 #connect{
     background-color: white;
     display: flex;

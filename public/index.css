@@ -426,7 +426,7 @@ li:nth-child(even) {
 }
 
 #slider-container {
-    width: 100%;
+    width: 80%;
     overflow: hidden; /* Hide overflow */
     white-space: nowrap; /* Prevent wrapping */
     
@@ -480,7 +480,7 @@ li:nth-child(even) {
 }
 @keyframes scroll {
     0% {
-        transform: translateX(0%);
+        transform: translateX(100%);
     }
     100% {
         transform: translateX(-100%);

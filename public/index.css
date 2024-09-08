@@ -412,21 +412,27 @@ li:nth-child(even) {
 #donors{
     background-color: white;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 #donors-main-container{
     display: flex;
+    
     flex-direction: column;
-    width: auto;
+    width: 70vw;
     height: auto;
     border: 2px solid #000; /* Border around the main container */
     border-radius: 20px;
     box-sizing: border-box;    
     background-color: black; 
     min-height: 50vh;
+    
 }
 
 #slider-container {
-    width: 80%;
+    width: 100%;
     overflow: hidden; /* Hide overflow */
     white-space: nowrap; /* Prevent wrapping */
     
@@ -440,7 +446,7 @@ li:nth-child(even) {
 #donor-name {
     display: inline-block;
     margin: 0 10px; /* Space between names */
-    font-size: 18px;
+    font-size: 20px;
     
     animation: colorChange 6s infinite;
 

@@ -504,6 +504,8 @@ li:nth-child(even) {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: black;
+    padding: 20px;
 }
 
 
@@ -511,7 +513,7 @@ li:nth-child(even) {
     
     background-color: white;
 
-#contact-form input,
+/*#contact-form input,
 #contact-form textarea {
     width: 90%;
     max-width: 500px;
@@ -519,10 +521,10 @@ li:nth-child(even) {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
+}*/
 
 
-#contact-form button {
+/*#contact-form button {
     font-weight: bold;
     padding: 15px;
     color: white;
@@ -531,7 +533,7 @@ li:nth-child(even) {
     border-radius: 3px;
     font-size: 2vh;
     cursor: pointer;
-}
+}*/
 
 
 }

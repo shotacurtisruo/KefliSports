@@ -155,6 +155,7 @@ section {
     padding-left: 40px;   /* Padding on the left side */
     padding-top: 0;  
     background-color: white;
+    align-items: center;
     
 
 }
@@ -178,6 +179,7 @@ section {
 #about-lower-container-text p{
     display: flex;
     text-align: center;
+    
     font-size: 2.5vh;
     background-color: white;
     
@@ -186,6 +188,15 @@ section {
 #about-header, #events h1 {
     margin: 0;
     padding-top: 30px; /* Adjust as needed */
+}
+#about-lower-container-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+#about-lower-container-2 p{
+    padding: 30px;
 }
 #events {
     padding-top: 20px;
@@ -384,7 +395,7 @@ li:nth-child(even) {
     flex-direction: row;
 }
 #founders-portrait{
-    height: 85vh;
+    height: auto;
     width: 37vw;
     padding: 20px;
 }
@@ -514,6 +525,12 @@ li:nth-child(even) {
     
     background-color: white;
 
+
+}
+#email-us{
+    font-size: 5vh;
+}
+
 /*#contact-form input,
 #contact-form textarea {
     width: 90%;
@@ -537,12 +554,15 @@ li:nth-child(even) {
 }*/
 
 
-}
+
 
 #social-icon:hover{
     transform: scale(1.1);
     
 }
+
+
+
 /* General mobile styles */
 @media (max-width: 768px) {
     body {

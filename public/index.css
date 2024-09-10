@@ -278,8 +278,8 @@ li:nth-child(even) {
 }
 #largeImage{
     
-    height: auto;
-    width: 65vw;
+    height: 50vh;
+    width: auto;
     
 }
 .main-image img {

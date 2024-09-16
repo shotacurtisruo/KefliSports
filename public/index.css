@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&family=Sofadi+One&display=swap');
 body{
     background-color: black;
+    font-family: "Sofadi One", system-ui;
 }
 #headerTitle{
     background-color: white;

@@ -641,7 +641,7 @@ li:nth-child(even) {
     #logo {
         width: 90vw; /* Adjust logo size for mobile */
         height: auto;
-        padding-top: 10px;
+        /*padding-top: 10px;*/
     }
 
     #kids-jumping {

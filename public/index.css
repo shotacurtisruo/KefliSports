@@ -118,7 +118,7 @@ section {
 }
 #logo{
     display: flex;
-    height: 80vh;
+    height: auto;
     width: 60vw;
     /*padding-top: 20px;*/
     /*border: 5px solid white;*/
